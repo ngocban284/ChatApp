@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "46d6ad20-26e7-465a-9a2f-e79527248de1",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "\"Daongocban1102@gmail.com\"",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "\"Ban28042001\"",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registerUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "\"Dao Ngoc Ban\"",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "\"Daongocban1102@gmail.com\"",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "\"Ban28042001\"",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:3000/api/users/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "allUsers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNTU5MDQ0NTU1NGE1ZDliZjk2OWM4NyIsImlhdCI6MTY0OTc3NDY2MCwiZXhwIjoxNjUyMzY2NjYwfQ.k6gF2d0RGnyPW3Ow7olsvD6cEMPRw5eLaCmcUqoyiqk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "8c2f28e6-0e49-4323-9b97-cb72269ddc15",
+		"name": "Message",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "sendMessage 1-1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNTU4ODA4NjU1OTM2ZDcyNTBlN2I1OCIsImlhdCI6MTY0OTg0NTQxNiwiZXhwIjoxNjUyNDM3NDE2fQ.hXV_FWYMaJONn6pZ_H9TFvusti9CbjVHb_uB6Xd2eYM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "chatId",
+							"value": "625689a9b0baadf6344184c8",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "Dau m co cat moi khong ?",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/messages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "allMessageInChat",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
